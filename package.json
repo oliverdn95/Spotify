@@ -1,0 +1,13 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix 'Backend Spotify' && npm install --prefix 'Frontend Spotify' && npm run build --prefix 'Frontend Spotify'",
+    "start": "npm run start --prefix 'Backend Spotify'"
+  }
+}
