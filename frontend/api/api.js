@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:3000";
+const URL = "spotify-xqr3.onrender.com/api";
 
 const responseArtist = await axios.get(`${URL}/artists`);
 const responseSong = await axios.get(`${URL}/songs`);
