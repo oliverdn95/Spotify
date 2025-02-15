@@ -11,7 +11,7 @@ const SongList = ({ songsArray }) => {
         .map((currentSongObj, index) => (
           <SongItem {...currentSongObj} index={index} key={index} />
         ))}
-      {/* quero fazer o botão desaparecer qnd n tiver mais o que mostrar */}
+
       <p className="song-list__see-more" onClick={() => setItems(items + 5)}>
         Ver mais
       </p>

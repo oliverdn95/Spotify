@@ -7,7 +7,6 @@ import {
   faForwardStep,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { artistArray } from "../assets/database/artists";
 import { songsArray } from "../assets/database/songs";
 
 const formatTime = (timeInSeconds) => {
@@ -35,9 +34,7 @@ const Player = ({ image, name, duration, artist, audio, _id }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(formatTime(0));
   const durationInSeconds = timeInSeconds(duration);
-  // const { image, name, banner } = artistArray.filter(
-  //   (currentArtistObj) => currentArtistObj.name === artist
-  // )[0];
+
   const songArrayFromArtist = songsArray.filter(
     (currentSongObj) => currentSongObj.artist === artist
   );
